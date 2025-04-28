@@ -16,7 +16,7 @@
     "@vercel/analytics": "^1.5.0",
     "@vueuse/core": "^13.1.0",
     "vue": "^3.5.12",
-    "vue-router": "^4.4.5"
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.10.4",
