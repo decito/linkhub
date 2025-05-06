@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { defineProps, defineEmits } from 'vue'
-import { socials, shareLink } from '@/storage/socials'
 import { copyToClipboard } from '@/helpers'
+import { shareLink, socials } from '@/storage/socials'
 
 defineProps({ open: Boolean })
 defineEmits(['closeModal'])
@@ -11,14 +10,14 @@ defineEmits(['closeModal'])
   <div
     :class="[
       open ? 'fixed' : 'hidden',
-      'inset-0 z-40 flex items-center justify-center bg-background/80'
+      'bg-background/80 inset-0 z-40 flex items-center justify-center'
     ]"
   >
-    <div class="flex w-[520px] flex-col items-center space-y-6 rounded-lg bg-background">
+    <div class="bg-background flex w-[520px] flex-col items-center space-y-6 rounded-lg">
       <div class="relative flex w-full justify-center">
         <h3 class="pt-4 font-medium">Compartilhar o perfil</h3>
         <button
-          class="absolute right-3 top-3 flex w-4 items-center justify-center"
+          class="absolute top-3 right-3 flex w-4 items-center justify-center"
           @click="$emit('closeModal')"
         >
           <i class="fas fa-xmark" />
@@ -27,7 +26,7 @@ defineEmits(['closeModal'])
       <div class="flex w-full justify-center gap-4 px-4">
         <input
           type="text"
-          class="rounded border-2 border-button-hover bg-background px-2 py-1 font-medium"
+          class="border-button-hover bg-background rounded border-2 px-2 py-1 font-medium"
           :value="shareLink"
           @click="copyToClipboard"
           readonly

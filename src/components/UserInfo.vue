@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col gap-4">
-    <div id="user-ring" class="mx-auto rounded-full bg-secondary p-1 transition-all duration-300">
+    <div id="user-ring" class="bg-secondary mx-auto rounded-full p-1 transition-all duration-300">
       <img src="https://avatars.githubusercontent.com/u/61292095" class="size-28 rounded-full" />
     </div>
     <header class="text-center">

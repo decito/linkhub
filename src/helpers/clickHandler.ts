@@ -1,5 +1,5 @@
-import { ref } from 'vue'
 import { shareLink } from '@/storage/socials'
+import { ref } from 'vue'
 
 const stopFlag = ref(false)
 
