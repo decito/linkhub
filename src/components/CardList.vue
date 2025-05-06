@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import CardItem from '@/components/CardItem.vue'
 import { items } from '@/storage'
+import { ref } from 'vue'
 
 const list = ref(items.sort((a, b) => a.order - b.order))
 </script>

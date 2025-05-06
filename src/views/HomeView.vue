@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import UserInfo from '@/components/UserInfo.vue'
 import CardList from '@/components/CardList.vue'
+import UserInfo from '@/components/UserInfo.vue'
 </script>
 
 <template>

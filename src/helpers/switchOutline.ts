@@ -1,6 +1,6 @@
 export const switchUserAvatarOutlineColor = (color: string) => {
   const avatar = document.getElementById('user-ring') as HTMLElement
-  avatar.classList.forEach(className => {
+  avatar.classList.forEach((className) => {
     if (className.startsWith('bg-')) {
       avatar.classList.remove(className)
     }

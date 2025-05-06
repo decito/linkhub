@@ -1,23 +1,23 @@
 <script setup lang="ts">
-import DialogShare from './DialogShare.vue'
 import { ref } from 'vue'
+import DialogShare from './DialogShare.vue'
 
 const open = ref(false)
 </script>
 
 <template>
   <header class="flex w-full items-center justify-between pt-6">
-    <button
-      type="button"
-      class="flex size-12 items-center justify-center gap-4 rounded-full bg-button p-4 text-foreground transition-colors duration-300 hover:bg-button-hover"
-    >
-      <a href="https://github.com/decito/linkhub" target="_blank">
+    <a href="https://github.com/decito/linkhub" target="_blank" class="rounded-full">
+      <button
+        type="button"
+        class="bg-button text-foreground hover:bg-button-hover flex size-12 items-center justify-center gap-4 rounded-full p-4 transition-colors duration-300"
+      >
         <i class="fab fa-github fa-xl" />
-      </a>
-    </button>
+      </button>
+    </a>
     <button
       type="button"
-      class="flex size-12 items-center justify-center rounded-full bg-button p-4 text-foreground transition-colors duration-300 hover:bg-button-hover"
+      class="bg-button text-foreground hover:bg-button-hover flex size-12 items-center justify-center rounded-full p-4 transition-colors duration-300"
       @click="open = true"
     >
       <template v-if="false">

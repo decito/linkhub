@@ -1,8 +1,8 @@
 <template>
-  <footer class="w-full pb-6 pt-16 text-center">
+  <footer class="w-full pt-16 pb-6 text-center">
     <span>Feito com ❤️ por</span>
     <a
-      href="https://linkedin.com/in/desceoneto"
+      href="https://linkedin.com/in/decitodev"
       target="_blank"
       class="font-semibold transition-colors hover:text-red-700 hover:brightness-200"
     >
