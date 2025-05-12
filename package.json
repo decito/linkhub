@@ -13,7 +13,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.1.5",
+    "@tailwindcss/postcss": "^4.1.6",
     "@tailwindcss/vite": "^4.1.5",
     "@vercel/analytics": "^1.5.0",
     "@vueuse/core": "^13.1.0",
